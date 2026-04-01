@@ -13,6 +13,9 @@ material = "1.13.0"
 activity = "1.13.0"
 constraintlayout = "2.2.1"
 
+# Detekt
+detekt = "1.23.8"
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -26,3 +29,5 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 
+# Detekt Plugin                                                                     =
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }

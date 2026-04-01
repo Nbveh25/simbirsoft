@@ -1,5 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
+
+    alias(libs.plugins.detekt)
 }
 
 android {
@@ -31,6 +33,26 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+}
+
+detekt {
+    toolVersion = libs.versions.detekt.get()
+
+    config.setFrom(files("${rootProject.projectDir}/config/detekt/detekt.yml"))
+
+    buildUponDefaultConfig = true
+    allRules = false
+    ignoreFailures = false
+
+
+    source = files(
+        rootProject.projectDir
+    )
+}
+
+tasks.withType<io.gitlab.arturbosch.detekt.Detekt>().configureEach {
+    exclude("**/build/**")
+    exclude("**/generated/**")
 }
 
 dependencies {
