@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/taskListFragment">
+
+    <fragment
+        android:id="@+id/taskListFragment"
+        android:name="ru.kazan.itis.bikmukhametov.simbirsoft.presentation.main.TaskListFragment"
+        android:label="@string/screen_tasks">
+        <action
+            android:id="@+id/action_taskListFragment_to_taskDetailFragment"
+            app:destination="@id/taskDetailFragment" />
+        <action
+            android:id="@+id/action_taskListFragment_to_createTaskFragment"
+            app:destination="@id/createTaskFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/taskDetailFragment"
+        android:name="ru.kazan.itis.bikmukhametov.simbirsoft.presentation.detail.TaskDetailFragment"
+        android:label="@string/screen_task_detail">
+        <argument
+            android:name="taskId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createTaskFragment"
+        android:name="ru.kazan.itis.bikmukhametov.simbirsoft.presentation.create.CreateTaskFragment"
+        android:label="@string/screen_create_task" />
+
+</navigation>
