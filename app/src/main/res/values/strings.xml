@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">SimbirSoft</string>
+    <string name="add_task">Добавить дело</string>
+    <string name="task_datetime_range">%1$s - %2$s</string>
+    <string name="additional_tasks_count">Еще дел в часе: %1$d</string>
+    <string name="task_name_hint">Название дела</string>
+    <string name="task_description_hint">Краткое описание</string>
+    <string name="choose_start">Выбрать начало</string>
+    <string name="choose_end">Выбрать окончание</string>
+    <string name="save_task">Сохранить</string>
+    <string name="start_datetime">Начало: %1$s</string>
+    <string name="end_datetime">Окончание: %1$s</string>
+    <string name="error_empty_title">Введите название дела</string>
+    <string name="error_invalid_time_range">Время окончания должно быть позже начала</string>
+    <string name="task_created">Дело создано</string>
+
+    <string name="screen_tasks">Мой день</string>
+    <string name="screen_task_detail">Дело</string>
+    <string name="screen_create_task">Новое дело</string>
+    <string name="create_section_main">Основное</string>
+    <string name="create_section_time">Время</string>
+    <string name="detail_section_period">Период</string>
+    <string name="detail_section_description">Описание</string>
 </resources>
